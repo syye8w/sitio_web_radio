@@ -1,6 +1,6 @@
 // Configuración del reproductor
 const radioStream = new Howl({
-    src: ['http://tuserver:8000/stream'], // URL de tu Icecast
+    src: ['https://sitio-web-radio.onrender.com/stream'], // URL de tu Icecast
     html5: true,
     format: ['mp3'],
     onplay: () => {
