@@ -1,0 +1,165 @@
+/* Reset y Fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Contenedor Principal */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.radio-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    filter: drop-shadow(0 0 10px #00ff88);
+    /*animation: rotate 20s linear infinite;*/
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 15px;
+    text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+}
+
+h1 span {
+    color: #00ff88;
+}
+
+/* Reproductor */
+.player {
+    position: relative;
+}
+
+.album-art {
+    width: 200px;
+    height: 200px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.vinyl {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(black 0%, #333 100%);
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.controls {
+    text-align: center;
+}
+
+.track-info {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #00ff88;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    background: none;
+    border: 2px solid #00ff88;
+    color: #00ff88;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: #00ff88;
+    color: #1a1a1a;
+    box-shadow: 0 0 15px #00ff88;
+}
+
+.volume-slider {
+    width: 150px;
+    height: 5px;
+    accent-color: #00ff88;
+    cursor: pointer;
+}
+
+/* Redes Sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.social-btn {
+    color: white;
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.social-btn:hover {
+    color: #00ff88;
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .radio-card {
+        padding: 20px;
+    }
+    
+    .album-art {
+        width: 150px;
+        height: 150px;
+    }
+}

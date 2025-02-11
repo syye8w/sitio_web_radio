@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="radio-card">
+            <!-- Logo y Título -->
+            <div class="header">
+                <img src="imagen.png" class="logo" alt="Radio Logo">
+                <h1>Radio <span>Radio</span></h1>
+            </div>
+
+            <!-- Reproductor -->
+            <div class="player">
+                <div class="album-art">
+                    <div class="vinyl"></div>
+                </div>
+                <div class="controls">
+                    <div id="currentTrack" class="track-info">🎧 Transmitiendo en vivo...</div>
+                    <div class="buttons">
+                        <button id="playPauseBtn" class="btn play-pause">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.1" value="1">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="social-links">
+                <!-- Reemplaza LOS_URLS por tus enlaces reales -->
+                <a href="https://facebook.com/tu_pagina" class="social-btn" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/tu_usuario" class="social-btn" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/tu_usuario" class="social-btn" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <!-- Agrega más redes si necesitas -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
